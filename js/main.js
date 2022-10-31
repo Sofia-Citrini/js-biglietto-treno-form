@@ -49,8 +49,14 @@ btnStampa.addEventListener("click", function () {
     } else if (inputAge.value === "over65") {
         let prezzoAnziani = prezzo * 0.6;
         console.log("Prezzo biglietto ridotto del 40%:", prezzoAnziani.toFixed(2));
-        priceTicket.innerHTML = `${prezzoAnziani.toFixed(2)} €`
+        priceTicket.innerHTML = `${prezzoAnziani.toFixed(2)} €`;
     }
+
+    let now = document.querySelector(".date");
+    now.innerHTML = new Date().toUTCString();
+
+    let route = document.querySelector(".route");
+    route.innerHTML = inputKm.value + "km";
 })
 
 
