@@ -53,7 +53,7 @@ btnStampa.addEventListener("click", function () {
     }
 
     let now = document.querySelector(".date");
-    now.innerHTML = new Date().toUTCString();
+    now.innerHTML = new Date().toLocaleString();
 
     let route = document.querySelector(".route");
     route.innerHTML = inputKm.value + "km";
