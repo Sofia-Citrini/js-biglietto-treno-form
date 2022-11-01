@@ -3,6 +3,7 @@ const inputName = document.querySelector("[name='fullName']");
 const inputKm = document.querySelector("[name='km']");
 const inputAge = document.querySelector("[name='age']");
 const btnStampa = document.querySelector(".btn-stampa");
+const btnAnnulla = document.querySelector(".btn-annulla");
 
 // section ticket
 const ticket = document.getElementById("ticket");
@@ -59,4 +60,9 @@ btnStampa.addEventListener("click", function () {
     route.innerHTML = inputKm.value + "km";
 })
 
-
+// Button:click annulla
+btnAnnulla.addEventListener("click", function() {
+    inputName.value = "";
+    inputKm.value = "";
+    inputAge.value = "-";
+})

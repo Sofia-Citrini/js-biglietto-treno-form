@@ -20,7 +20,8 @@ h6 {
     text-align: center;
 }
 
-.btn-stampa {
+.btn-stampa,
+.btn-annulla {
     --bs-btn-color: #B91450;
     --bs-btn-bg: var(--bs-gray-300);
     --bs-btn-border-color: var(--bs-gray);
